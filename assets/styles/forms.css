@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/*  ------ CUERPO GENERAL ------ */
+section{width: 100%; font-family: 'karla'; background-color:#5f0014;}
+p{
+    margin: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #000;
+}
+h1, h2{
+    padding: 30px;
+    text-align: center;
+    font-size: 3.3em;
+    color: #000;
+}
+/* ----------------- FORMULARIOS ---------------- */
+div{margin: 20px;}
+form{
+    width: 90%;
+    max-width: 530px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+    background-color:#b5d7ca;
+}
+form .texto input{
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1.1em;
+    background-color: #835210;
+}
+form .texto input::placeholder{color: #fff;}
+form select{
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #835210;
+}
+form input[type="radio"]{display: none;}
+form input[type="checkbox"]{display: none;}
+form .selector label{
+    padding: 10px;
+    padding-left: 45px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #835210;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+form .selector label::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+}
+form input[type="radio"]:checked + label::before,
+form input[type="checkbox"]:checked + label::before{background-color: #fff;}
+form .terminos label::before{border-radius: 0;}
+form textarea{
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-family: 'Karla';
+    background-color: #835210;
+}
+form textarea::placeholder{color: #fff;}
+form input[type="submit"]{
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: #5f0014;
+    cursor: pointer;
+}
+.sesion div{margin: 40px;}
+
+/* Publicidad */
+aside{ display: flex; justify-content: center;}
+aside img{width: 80%;}
+aside div{
+    width: 27%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+@media (max-width:1000px){
+    h1{font-size: 2.4em;}
+    form{font-size: .7em;}
+}
+@media (max-width:750px){
+    h1{font-size: 1.7em; padding: 10px;}
+    p{font-size: .8em;}
+    form{padding: 10px;}
+}
+@media (max-width:490px){
+    h1{padding: 7px;}
+    p{padding: 6px;margin: 5px;}
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/*  ------------INICIO------------ */
+main{width: 100%;margin: auto; font-family: 'karla';  background-color:#b5d7ca; display: flex; flex-wrap: wrap;}
+section{width: 74%; margin: 10px;}
+/* Procuctos Destacados*/
+div {
+    width: 100%;
+    height: 650px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+h2{
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2em;
+    color: #000;    
+}
+div article {
+    width: 28%;
+    height: 72%;
+    border-radius: 25px;
+    font-size: .9em;
+    background-color: #835210;
+}
+div p {
+    padding: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+div img{width: 100%; border-top-right-radius: 25px; border-top-left-radius: 25px;}
+/* Staff  */
+.staff article{width: 40%;}
+#persona1{
+    width: 100%;
+    height: 76%;
+    border-start-start-radius: 25px;
+    border-start-end-radius: 25px;
+    background-image: url(../img/persona1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#persona2{
+    width: 100%;
+    height: 76%;
+    border-start-start-radius: 25px;
+    border-start-end-radius: 25px;
+    background-image: url(../img/persona2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* --------------PRODUCTOS--------------- */
+h1{
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    font-size: 4em;
+    color: #000;
+}
+h3{
+    padding: 7px;
+    text-align: center;
+    font-size: 2.3em;
+    color: #000;
+}
+table{
+    width: 75%;
+    margin: 40px auto;
+    border: 3px solid #5f0014;
+    border-radius: 15px;
+}
+table p{
+    margin: 0 20px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #000;
+}
+table img{width: 325px; border:2px solid #5f0014; border-radius: 10px;}
+p strong{font-size: .8em;font-weight: 800;}
+.precio{font-size: 1.8em;}
+
+/*  ------------NOSOTROS------------ */
+.our{width: 100%; margin: 0;}
+.our article div{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    border: 4px solid #5f0014;
+    border-radius: 25px;
+    font-size: 1.2em;
+}
+.our article img{
+    width: 45%;
+    margin: 7px;
+    border: 4px solid #5f0014; 
+    border-radius: 25px;
+}
+.float{float: right;}
+.our p{padding: 15px; color: #000; font-weight:normal;}
+.our h2{padding: 30px;;font-size: 3em;clear: both ;}
+.our iframe{margin-left: 20%; border: 4px solid #5f0014;border-radius: 5%; clear: both;}
+.our table img{width: 330px; border:2px solid #5f0014; border-radius: 20px;}
+.our table{margin: 10px auto;}
+
+
+/* Publicidad */
+aside{width: 22%;}
+aside div{
+    width: 100%;
+    height: 22%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: .8em;
+    color: rgb(206, 206, 206);
+    background-color: #8b0000;
+    display: flex;
+    flex-direction: column;
+}
+aside h4{text-align: center;color: #fff;}
+aside a{text-decoration: none;color: #fff;}
+aside img{width: 80%;margin: 0 10%;border-radius: 0;}
+
+@media(max-width:900px){
+    article{font-size: .9em;}
+    .our table img{width: 200px;}
+    aside div{padding: 6px; font-size: .7em;}
+}
+@media(max-width:750px){
+    h1, h3, h2{font-size: 1.7em;}
+    section{width: 100%;margin: 0;font-size: .8em;}
+    div{height: 430px;margin: 0; justify-content: space-evenly;}
+    p{padding: 6px; font-size: .8em;}
+    .producto table tr, .producto table td{display: block;}
+    .our table img{width: 110px;}
+    .our iframe{width: 300px;height: 300px;}
+    .our article div{width: 60%;}
+    .our article img{width: 35%;}
+    aside{width: 100%;display: inline-flex;}
+    aside div{height: 92%; margin: 6px; font-size: .5em;}
+    .oculto{display: none;}
+}
+@media (max-width:490px){
+    div{height: 370px;}
+    div p{font-size: 12px;padding: 3px; }
+    aside div p{font-size: 8px;}
+    .our table img{width: 70px;}
+    .our table p{padding: 7px; font-size: .4em;}
+    .our h3{font-size: 1em;}
+    .our h2{font-size: 2em;}
+    .our article p{font-size: .7em;}
+    .our article div, .our article img{width: 90%;}
+    .our iframe{margin: 13%;}
+    .float{float: none;}
+}
